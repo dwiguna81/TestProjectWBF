@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/home', 'PublicController@home');
+
+Route::get('/test', 'PublicController@test');
