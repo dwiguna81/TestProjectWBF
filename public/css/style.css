@@ -8,10 +8,266 @@
     max-height: 200px !important;
 }
 
-.container-flex {
-    display: flex;
+
+
+/* .item-flex {
+    flex-direction: space-between;
+} */
+
+/* .card {
+    margin: 10px;
+} */
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
 }
 
-.item-flex {
-    flex-direction: space-between;
+/* The overlay effect with black background */
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9); /* Black with a little bit see-through */
+  }
+  
+  /* The content */
+  .overlay-content {
+    position: relative;
+    top: 46%;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+  }
+  
+  /* Close button */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  /* Style the search field */
+  .overlay input[type=text] {
+    padding: 15px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: white;
+  }
+  
+  .overlay input[type=text]:hover {
+    background: #f1f1f1;
+  }
+  
+  /* Style the submit button */
+  .overlay button {
+    float: left;
+    width: 20%;
+    padding: 15px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .overlay button:hover {
+    background: #bbb;
+  }
+
+@font-face {
+  font-family: 'Barlow-Condensed-bold';
+  src: url('../font/BarlowCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Condensed-reguler';
+  src: url('../font/BarlowCondensed-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Condensed-semibold';
+  src: url('../font/BarlowCondensed-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Condensed-light';
+  src: url('../font/BarlowCondensed-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Condensed-medium';
+  src: url('../font/BarlowCondensed-Medium.ttf') format('truetype');
+}
+
+body {
+  font-family: Barlow-Condensed-reguler;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+/* .content {
+  margin-left: -40px;
+} */
+
+ul ul a {
+  padding-left: 15px !important;
+  background: #fff;
+}
+
+.container-flex {
+  display: flex;
+  /* margin-left: 2em; */
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container-content {
+  display: flex;
+  justify-content: space-between;
+  /* margin-left: 2em; */
+}
+
+.mcard {
+  margin: 5px;
+  /* margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px; */
+}
+
+.csearch {
+  margin-bottom: 25px;
+}
+
+.mp {
+  margin-top: 10px;
+}
+
+.dt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnfilter {
+  width: 80%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #D11A22;
+  color: white;
+  border: 0;
+  font-family: Barlow-Condensed-semibold;
+}
+
+.jbbg {
+  background: url('/storage/images/bg-allproduct.png');
+  background-size: 100%;
+}
+
+.text-jb {
+  color: white;
+  text-align: center;
+}
+
+.card {
+  border-radius: 0%;
+}
+
+.image-product {
+  width: 100% !important;
+  /* height: 100% !important; */
+  /* display: block; */
+  /* margin-bottom: -5px; */
+}
+
+/* .mcontentcard {
+  display: block;
+} */
+
+
+.rm {
+  width: 100% !important;
+  height: 8% !important;
+  border: 0;
+  background: black;
+  color: white;
+  font-size: 0.8em;
+  font-family: Barlow-Condensed-bold;
+}
+
+.trp {
+  background: black;
+  color: white;
+  height: 15%;
+  width: 15%;
+}
+
+.firstprice {
+  width: 75%;
+}
+
+.fontb {
+  font-family: Barlow-Condensed-bold;
+  font-size: 1.5em;
+}
+
+.pagin {
+  margin-left: 1px;
+  margin-right: 5px;
+  margin-top: 15px;
+}
+
+.sidefont {
+  font-family: Barlow-Condensed-reguler;
+  font-size: 1.2em;
+  /* color: black; */
+}
+
+ul.pagination {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+ul.pagination li a.active {
+  color: #D11A22;
 }

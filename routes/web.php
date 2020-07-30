@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/home', 'PublicController@home');
 
 Route::get('/test', 'PublicController@test');
+
+@Route::get('/search', 'PublicController@search');
+@Route::get('/testsearch', 'PublicController@testsearch');

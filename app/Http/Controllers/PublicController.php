@@ -15,4 +15,14 @@ class PublicController extends Controller
     {
         return view('test');
     }
+
+    public function search()
+    {
+        return view('search');
+    }
+
+    public function testsearch(Type $var = null)
+    {
+        return view('testsearch');
+    }
 }
